@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+  url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+  url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin:0;
+  font-family: "Open sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #16121d;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #f31515;
+  margin-top: 100px;
+}
+
+.about-self {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-self-left-box {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+  color: #fff;
+}
+
+.my-profession {
+  margin: 0;
+  padding: 10px;
+}
+
+.name {
+  margin: 20px 0 0 0;
+}
+
+.my-pictures {
+  border-radius: 50%;
+  border: 3px solid red;
+  box-shadow: 0 0 0 3px green;
+}
+
+.about-self-right-box {
+  width: 700px;
+  border-radius: 8% 10% 10% 7% / 43% 0% 0% 42%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.social-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.social-list-item {
+
+}
+
+.social-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 25px;
+  color: rgb(47, 230, 230);
+  vertical-align: baseline;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.social-link::before {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+
+.email::before {
+  background-image: url(../img/email.png);
+}
+
+.email {
+  width: 500px;
+}
+
+.telegram-link::before {
+  background-image: url("../img/telegram.png");
+}
+
+.tel::before {
+  background-image: url("../img/call.png");
+  width: 30px;
+  height: 30px;
+}
+
+.social-link:hover {
+  color: rgb(27, 172, 172);
+  text-decoration: underline;
+
+}
+
+.my-works {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.my-works-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 400px;
+  background-image: linear-gradient(to right bottom, red, #16121d, #16121d, green);
+}
+
+.local-box {
+  width: 95%;
+  height: 97%;
+  background-color: #16121d;
+  padding: 10px;
+  color: rgb(170, 179, 48);
+  text-align: center;
+}
+
+.my-site-list {
+  list-style-type: none;
+  padding: 0%;
+  margin-top: 50px;
+}
+
+.site-list-item {
+  padding: 20px;
+}
+
+.site-link {
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(170, 179, 48);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.site-link:hover {
+  color: rgb(76, 235, 14);
+  text-shadow: 5px 5px 5px red;
+}
+
+.site-footer {
+  text-align: center;
+}
+
+.footer-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: green;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.footer-text::before {
+  width: 430px;
+  height: 3px;
+  display: inline-block;
+  content: "";
+  background-color: red;
+  margin-right: 10px;
+}
+
+.footer-text::after {
+  width: 430px;
+  height: 3px;
+  display: inline-block;
+  content: "";
+  background-color: red;
+  margin-left: 15px;
+}
+
+
+.symbol {
+  font-size: 20px;
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+}
