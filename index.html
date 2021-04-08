@@ -17,9 +17,16 @@
       <h1 class="visually-hidden">O'z ishlarimni joylab borish uchun bir saxifali sayt.</h1>
 
       <section class="about-self-left-box">
-        <img src="./img/kamina.jpg" alt="Jahongir Sadullayev" class="my-pictures" width="200" height="200">
+        <div class="circle">
+          <div class="img-box"><img src="./img/kamina.jpg" alt="Jahongir Sadullayev" class="my-pictures" width="200" height="200">
+            <div class="ruler"></div>
+          </div>
+        </div>
+
         <h2 class="name">Sadullayev Jahongir</h2>
         <p class="my-profession">Web dasturchi</p>
+
+
       </section>
 
       <section class="about-self-right-box">
@@ -32,11 +39,11 @@
           </li>
 
           <li class="social-list-item">
-            <a href="@jahongir_mh" class="telegram-link social-link" target="_blank">@jahongir</a>
+            <a href="https://tme.to/@jahongir_mh" class="telegram-link social-link" target="_blank">@jahongir_mh</a>
           </li>
 
           <li class="social-list-item">
-            <a href="tel:+998975008749" class="tel social-link">97 500 87 49</a>
+            <a href="tel:+998975008749" class="tel social-link"> 97 500 87 49</a>
           </li>
         </ul>
 
@@ -47,16 +54,28 @@
     <section class="my-works">
       <div class="my-works-now">
         <div class="local-box">
-          <h3>O'qishimning 1-oyida qilgan ishlarim.</h3>
+          <h3>Texnologiyalar</h3>
           <ul class="my-site-list">
             <li class="site-list-item">
-              <a href="https://sharp-yonath-3ff04b.netlify.app" class="site-link" target="_blank">Saytning footer qismi</a>
+              <p class="skills-text">HTML</p>
             </li>
             <li class="site-list-item">
-              <a href="https://jahongirsadullayev.netlify.app/" class="site-link" target="_blank">E-xamyon</a>
+              <p class="skills-text">CSS</p>
             </li>
             <li class="site-list-item">
-              <a href="https://exam-pixer-29.netlify.app/" class="site-link" target="_blank">Pixer sayti bosh sahifasi</a>
+              <p class="skills-text">SASS</p>
+            </li>
+            <li class="site-list-item">
+              <p class="skills-text">BOOTSTRAP</p>
+            </li>
+            <li class="site-list-item">
+              <p class="skills-text">JAVA SCRIPT</p>
+            </li>
+            <li class="site-list-item">
+              <p class="skills-text">REACT JS</p>
+            </li>
+            <li class="site-list-item">
+              <p class="skills-text">GITHUB</p>
             </li>
           </ul>
         </div>
@@ -64,13 +83,27 @@
 
       <div class="my-works-now">
         <div class="local-box">
-          <h3>O'qishimning 2-oyida qilgan ishlarim.</h3>
+          <h3>Qilgan ishlarimdan na'munalar</h3>
           <ul class="my-site-list">
             <li class="site-list-item">
-              <a href="https://sadullayev29.netlify.app" class="site-link" target="_blank">Drop downli menu</a>
+              <a href="https://movie-database-jahongir.netlify.app/" class="site-link" target="_blank">Kinolar haqidagi sayt</a>
+              <a href="https://github.com/Jahongir-web/Movie_database" class="site-link" target="_blank">Githubdagi manzili</a>
             </li>
             <li class="site-list-item">
-              <a href="https://boring-joliot-1c2109.netlify.app/" class="site-link" target="_blank">Apple maxsulotlari sayti</a>
+              <a href="https://next-website.netlify.app/" class="site-link" target="_blank">Next sayti</a> <br>
+              <a href="https://github.com/Jahongir-web/Next-website" class="site-link" target="_blank">Githubdagi manzili</a>
+            </li>
+            <li class="site-list-item">
+              <a href="https://myteam-jahongir.netlify.app/" class="site-link" target="_blank">My Team sayti</a> <br>
+              <a href="https://github.com/Jahongir-web/Myteam-2" class="site-link" target="_blank">Githubdagi manzili</a>
+            </li>
+            <li class="site-list-item">
+              <a href="https://jahongir-animated-login-form.netlify.app/" class="site-link" target="_blank">Animatsiyali login form</a> <br>
+              <a href="https://github.com/Jahongir-web/Animated-Login-Form-With-Glowing-Button" class="site-link" target="_blank">Githubdagi manzili</a>
+            </li>
+            <li class="site-list-item">
+              <a href="https://contacts-book-jahongir.netlify.app/" class="site-link" target="_blank">Contactlarni saqlovchi app</a> <br>
+              <a href="https://github.com/Jahongir-web/Contacts-book" class="site-link" target="_blank">Githubdagi manzili</a>
             </li>
           </ul>
         </div>
@@ -80,9 +113,14 @@
   </div>
 
   <footer class="site-footer">
-    <p class="footer-text"> <span class="symbol">&#169;</span> Jahondir Sadullayev Tech</p>
+    <p class="footer-text"> 2020-<span class="footer-site__span"> 2021 </span> <span class="symbol">.  &#169;</span> Jahongir Sadullayev</p>
   </footer>
 
+  <script>
+    let elFooterDateSpan = document.querySelector(`.footer-site__span`);
+
+    elFooterDateSpan.textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
